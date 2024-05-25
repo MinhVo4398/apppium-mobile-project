@@ -22,7 +22,7 @@ public class AppiumServer {
               //  .withArgument(GeneralServerFlag.BASEPATH, "wd/hub")
 
        server =  AppiumDriverLocalService.buildService(builder);
-      // server.start();
+        // server.start();
        // System.out.println(server.getUrl());
        // System.out.println(server.isRunning());
       //  server.stop();
