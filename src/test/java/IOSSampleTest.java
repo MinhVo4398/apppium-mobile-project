@@ -29,7 +29,5 @@ public class IOSSampleTest {
         driver.findElement(AppiumBy.accessibilityId("Login button")).click();
         Thread.sleep(3000);
         driver.quit();
-
-
     }
 }
