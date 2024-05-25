@@ -1,3 +1,4 @@
+import base.AppiumServer;
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
@@ -8,6 +9,7 @@ import java.net.URL;
 
 public class AndroidSampleTest {
     public static void main(String[] args) throws MalformedURLException, InterruptedException {
+        AppiumServer.start();
 
         UiAutomator2Options options = new UiAutomator2Options();
         options.setDeviceName("emulator-5554") //adb devices
@@ -26,6 +28,8 @@ public class AndroidSampleTest {
         driver.findElement(AppiumBy.accessibilityId("Login button")).click();
 
         Thread.sleep(3000);
-        driver.quit();
+          driver.quit();
+
+        AppiumServer.stop();
     }
 }
