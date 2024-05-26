@@ -15,7 +15,7 @@ public class nativeToWeb {
     @Test
     public  static void sampleTest() throws MalformedURLException, InterruptedException {
         AppiumServer.start();
-
+        // Webdriver io app
         XCUITestOptions options = new XCUITestOptions();
         options.setDeviceName("iPhone SE (3rd generation)")
                 .setPlatformVersion("17.5")
