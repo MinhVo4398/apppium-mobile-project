@@ -10,6 +10,7 @@ public class IOSSampleTest {
 
     public static void main(String[] args) throws MalformedURLException, InterruptedException {
         XCUITestOptions options = new XCUITestOptions();
+        // Saucelab
         options.setDeviceName("iPhone SE (3rd generation)") //xcrun simctl list | egrep '(Booted)'
                 .setPlatformVersion("17.5")
                 .setBundleId("com.saucelabs.mydemoapp.rn");

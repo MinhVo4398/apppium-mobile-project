@@ -10,7 +10,7 @@ import java.net.URL;
 public class AndroidSampleTest {
     public static void main(String[] args) throws MalformedURLException, InterruptedException {
         AppiumServer.start();
-
+        //  Saucelab
         UiAutomator2Options options = new UiAutomator2Options();
         options.setDeviceName("emulator-5554") //adb devices
         .setPlatformVersion("11.0") //adb shell getprop ro.build.version.release
